@@ -1,6 +1,6 @@
 {
   "name": "@eduardoroth/media-player",
-  "version": "4.0.0",
+  "version": "4.0.7",
   "description": "Updated Media Player for iOS, Android and Web",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
@@ -42,8 +42,7 @@
     "docgen": "docgen --api MediaPlayerPlugin --output-readme README.md --output-json dist/docs.json",
     "build": "npm run clean && npm run docgen && tsc && rollup -c rollup.config.mjs",
     "clean": "rimraf ./dist",
-    "watch": "tsc --watch",
-    "prepublishOnly": "npm run build && git push --follow-tags"
+    "watch": "tsc --watch"
   },
   "devDependencies": {
     "@capacitor/android": "^7.0.0",
